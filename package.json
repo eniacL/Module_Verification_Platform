@@ -1,0 +1,103 @@
+{
+	"name": "mvp",
+	"displayName": "Module Verification Platform",
+	"description": "Supporting for vscode-work-flow of ICer",
+	"version": "0.5.0",
+	"publisher": "LSF",
+	"author": {
+		"name": "LSF",
+		"url": "https://github.com/eniacL"
+	},
+	"icon": "doc/logo.png",
+	"bugs": {
+		"url": ""
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"homepage": "",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:systemverilog",
+		"onView:MVP",
+		"onCommand:mvp.showCodeExplorer"
+	],
+    "main": "./out/extension.js",
+    "contributes": {  
+		"commands": [
+			{
+				"command": "mvp.showCodeExplorer",
+				"title": "Show Code Explorer",
+				"category": "SystemVerilog Code Explorer",
+				"when": "editorTextFocus && editorLangId == systemverilog"
+			}
+		],
+        "viewsContainers": {                                                                   
+            "activitybar": [
+				{
+                    "id": "MVP",
+                    "title": "MVP",
+                    "icon": "resources/images/logo/mvp_logo_v1.2.svg"
+                }
+			]
+        },
+        "views": { 
+            "MVP": [
+				{
+					"id": "mvp.codeExplorer",
+					"name": "outline"
+				},
+                {
+                    "id": "uvm_lib",
+                    "name": "UVM查询库"
+                }
+            ]
+        },
+		"languages": [
+			{
+				"id": "systemverilog",
+				"aliases": [
+					"SystemVerilog",
+					"SV",
+					"sv"
+				],
+				"extensions": [
+					".sv",
+					".sva",
+					".svi",
+					".svh",
+					".v",
+					".vh"
+				]
+			}
+		]
+    },
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.15.0",
+		"@typescript-eslint/eslint-plugin": "^4.9.0",
+		"@typescript-eslint/parser": "^4.9.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.1.2",
+		"vscode-test": "^1.4.1"
+	}
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
