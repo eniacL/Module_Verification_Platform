@@ -3,7 +3,11 @@
 ## 介绍
 ​	Module_Verification_Platform（简称：MVP），模块验证平台。依托于Microsoft开源代码编辑器Visual Studio Code（简称：VS Code），以VSCode插件的形式存在。主要服务于IC前端的Work-Flow。让VSCode更加接近ICer的使用场景，并带来效率和使用体验的提升。下图为MVP插件的logo。
 
+<<<<<<< HEAD
 <img src="md_src/logo/mvp_logo.png" /> 
+=======
+<img src="md_src/logo/mvp_logo.png" width="450" /> 
+>>>>>>> 472b0f5ff21bba2d70b8df76e1a584a78bd31864
 
 ## Feature
 
@@ -19,4 +23,8 @@
 
 ### Outline
 
+<<<<<<< HEAD
 <img src="md_src/outline/outline_class.gif"/> 
+=======
+<img src="md_src/outline/outline_class.gif"/> 
+>>>>>>> 472b0f5ff21bba2d70b8df76e1a584a78bd31864
