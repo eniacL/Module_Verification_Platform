@@ -52,11 +52,7 @@
 				{
 					"id": "mvp.codeExplorer",
 					"name": "outline"
-				},
-                {
-                    "id": "uvm_lib",
-                    "name": "UVM查询库"
-                }
+				}
             ]
         },
 		"languages": [
