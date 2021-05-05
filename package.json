@@ -10,15 +10,15 @@
 	},
 	"icon": "doc/logo.png",
 	"bugs": {
-		"url": ""
+		"url": "https://github.com/eniacL/Module_Verification_Platform/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/eniacL/Module_Verification_Platform"
 	},
-	"homepage": "",
+	"homepage": "https://github.com/eniacL",
 	"engines": {
-		"vscode": "^1.45.0"
+		"vscode": "^1.52.0"
 	},
 	"categories": [
 		"Other"

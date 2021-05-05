@@ -9,11 +9,11 @@ export class SyntaxTreeNodeProvider implements vscode.TreeDataProvider<Declarati
 {
 	// #region Properties (4)
 
-	private _onDidChangeTreeData: vscode.EventEmitter<DeclarationNode | undefined> = new vscode.EventEmitter<DeclarationNode | undefined>();
+	private _onDidChangeTreeData: vscode.EventEmitter<DeclarationNode | undefined | void> = new vscode.EventEmitter<DeclarationNode | undefined | void>();
 	private editor: vscode.TextEditor | null = null;
 	private rootElements: DeclarationNode[] = [new EmptyDeclarationNode()];
 
-	public readonly onDidChangeTreeData: vscode.Event<DeclarationNode | undefined> = this._onDidChangeTreeData.event;
+	public readonly onDidChangeTreeData: vscode.Event<DeclarationNode | undefined | void> = this._onDidChangeTreeData.event;
 
 	// #endregion
 
@@ -163,11 +163,11 @@ export class SyntaxTreeNodeProvider implements vscode.TreeDataProvider<Declarati
 		else
 		{
 			
-			if (a.label!.toLowerCase() > b.label!.toLowerCase())
+			if ((a.label as any)!.toLowerCase() > (b.label as any)!.toLowerCase())
 			{
 				return 1;
 			}
-			else if (a.label!.toLowerCase() < b.label!.toLowerCase())
+			else if ((a.label as any)!.toLowerCase() < (b.label as any)!.toLowerCase())
 			{
 				return -1;
 			}
