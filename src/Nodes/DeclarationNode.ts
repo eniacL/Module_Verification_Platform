@@ -26,8 +26,10 @@ export abstract class DeclarationNode extends vscode.TreeItem
 
 	// #region Public Accessors (1)
 
+	//@ts-ignore
 	public get tooltip(): string
 	{
+		//@ts-ignore
 		return this.label!;
 	}
 
