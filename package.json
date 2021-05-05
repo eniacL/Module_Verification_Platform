@@ -8,7 +8,7 @@
 		"name": "LSF",
 		"url": "https://github.com/eniacL"
 	},
-	"icon": "doc/logo.png",
+	"icon": "md_src/logo/mvp_logo.png",
 	"bugs": {
 		"url": "https://github.com/eniacL/Module_Verification_Platform/issues"
 	},
@@ -43,7 +43,7 @@
 				{
                     "id": "MVP",
                     "title": "MVP",
-                    "icon": "resources/images/logo/mvp_logo_v1.2.svg"
+                    "icon": "resources/images/logo/mvp_logo_v1.3.svg"
                 }
 			]
         },
