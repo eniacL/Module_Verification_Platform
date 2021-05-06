@@ -24,6 +24,13 @@
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"systemverilog",
+		"outline",
+		"class view",
+		"MVP",
+		"mvp"
+	],	
 	"activationEvents": [
 		"onLanguage:systemverilog",
 		"onView:MVP",
@@ -42,9 +49,9 @@
 		"keybindings": [
 			{
 				"command": "mvp.showCodeExplorer",
-				"key": "ctrl+shift+k",
+				"key": "ctrl+shift+alt+e",
 				"mac": "cmd+alt+k",
-				"when": "editorTextFocus editorLangId == systemverilog"
+				"when": "editorTextFocus && editorLangId == systemverilog"
 			}
 		],
 		"viewsContainers": {
