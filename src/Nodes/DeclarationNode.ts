@@ -33,25 +33,4 @@ export abstract class DeclarationNode extends vscode.TreeItem
 		return this.label!;
 	}
 
-	// #endregion
-
-	// #region Protected Methods (1)
-
-	protected convertHexToString(input: string)
-	{
-		var inputHex = input.match(/[\s\S]{2}/g) || [];
-		var output = '';
-
-		for (var i = 0, j = inputHex.length; i < j; i++)
-		{
-			output += '%' + ('0' + inputHex[i]).slice(-2);
-		}
-
-		output = decodeURIComponent(output);
-		
-		
-		return output;
-	}
-
-	// #endregion
 }
