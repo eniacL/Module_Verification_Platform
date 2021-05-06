@@ -28,9 +28,6 @@ export class ClassDeclarationNode extends DeclarationNode
 
 		if (!isExport)
 		{
-			console.log(this.imageDir);
-			
-
 			this.label += " ";
 		}
 	}
