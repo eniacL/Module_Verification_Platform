@@ -162,12 +162,12 @@ export class SyntaxTreeNodeProvider implements vscode.TreeDataProvider<Declarati
 		}
 		else
 		{
-			
-			if ((a.label as any)!.toLowerCase() > (b.label as any)!.toLowerCase())
+			//@ts-ignore
+			if (a.label!.toLowerCase() > b.label!.toLowerCase())
 			{
 				return 1;
-			}
-			else if ((a.label as any)!.toLowerCase() < (b.label as any)!.toLowerCase())
+			}//@ts-ignore
+			else if (a.label!.toLowerCase() < b.label!.toLowerCase())
 			{
 				return -1;
 			}
