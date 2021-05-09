@@ -9,16 +9,36 @@
 
 - ### 更多Feature持续开发中👌
 
-- ### 0.5.1：增加search keys（非功能相关）
+- ### 0.5.2：进制自动转换功能  [update time:2020-5-9]
 
-- ### 0.5.0： Outline功能
+- ### 0.5.1：增加search keys（非功能相关）[update time:2020-5-7]
+
+- ### 0.5.0： Outline功能  [update time:2020-5-6]
 
   - #### 增加对SystemVerilog中class定义的识别和跳转
 
-- ### 0.1~0.4：基础构建
+- ### 0.1~0.4：基础构建 [2020 ~ 2021-5]
+
+
 
 ## Using
 
 ### Outline
 
 <img src="md_src/outline/outline_class.gif"/> 
+
+### Hdbo_trans：进制转换
+
+<img src="md_src/hover/hdbo_trans.gif"/>
+
+
+
+## Repositories
+
+Github
+
+https://github.com/eniacL/Module_Verification_Platform
+
+Gitee
+
+https://gitee.com/liang_shaofei/module_verification_platform
