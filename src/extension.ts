@@ -4,6 +4,8 @@ import * as vscode from 'vscode';
 import { DeclarationNode } from "./Nodes/DeclarationNode";
 import { SyntaxTreeNodeProvider } from "./SyntaxTreeNodeProvider";
 
+import { HdboTrans } from "./Hover/HdboTrans"
+
 'use strict';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -106,6 +108,18 @@ export function activate(context: vscode.ExtensionContext) {
 	{
 		nodeDependenciesProvider.refresh(vscode.window.activeTextEditor);
 	}
+
+	//	*******************************************************************************************************************  //
+	//	**************************************************** hover part ***************************************************	 //
+	//	*******************************************************************************************************************  //
+	context.subscriptions.push(
+		vscode.languages.registerHoverProvider(
+		  [
+			{ language: 'systemverilog', scheme: '*' }
+		  ],
+		  new HdboTrans()
+		)
+	  );
 
 }
 
