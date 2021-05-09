@@ -17,10 +17,13 @@ export class HdboTrans implements vscode.HoverProvider {
 			let markdownString = new vscode.MarkdownString();
 			if (regexBin.test(hoveredWord.toString())) {
 
-				let input: Number = Number(parseInt(hoveredWord.substring(2), 2).toString());
+				hoveredWord = hoveredWord.replace("b","");
+                hoveredWord = hoveredWord.replace("B","");
+
+				let input: Number = Number(parseInt(hoveredWord, 2).toString());
 
                 let input_b: string = input.toString(2).replace(/(^\s+|\s+$)/, '');
-
+				
 
 				markdownString.appendCodeblock(`Dec:\n${input_b.length}'d${input}\nHex:\n${input_b.length}'b${input.toString(16).toUpperCase()}\nOctal:\n${input_b.length}'o${input.toString(8)} `, 'systemverilog');
 
