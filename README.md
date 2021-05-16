@@ -9,13 +9,7 @@
 
 - ### 更多Feature持续开发中👌
 
-<<<<<<< HEAD
 - ### 0.5.4：uvm_seq相关macros悬停提示[2021-5-16]
-=======
-- ### 0.5.3：进制自动转换功能  -> 修复二进制不能正常转换的问题  [update time:2020-5-9]
-
-- ### 0.5.2：进制自动转换功能  [update time:2020-5-9]
->>>>>>> 77efadc52fc6d4c5447c19ca4dd68594f8c8a40b
 
 - ### 0.5.3：进制自动转换功能  -> 修复二进制不能正常转换的问题  [2021-5-9]
 
@@ -53,7 +47,6 @@ https://github.com/eniacL/Module_Verification_Platform
 
 Gitee
 
-<<<<<<< HEAD
 https://gitee.com/liang_shaofei/module_verification_platform
 
 
@@ -62,6 +55,3 @@ https://gitee.com/liang_shaofei/module_verification_platform
 
 
 
-=======
-https://gitee.com/liang_shaofei/module_verification_platform
->>>>>>> 77efadc52fc6d4c5447c19ca4dd68594f8c8a40b
