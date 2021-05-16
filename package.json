@@ -2,7 +2,11 @@
 	"name": "mvp",
 	"displayName": "Module Verification Platform",
 	"description": "Supporting for vscode-work-flow of ICer",
+<<<<<<< HEAD
 	"version": "0.5.4",
+=======
+	"version": "0.5.3",
+>>>>>>> 77efadc52fc6d4c5447c19ca4dd68594f8c8a40b
 	"publisher": "LSF",
 	"license": "MIT",
 	"author": {
