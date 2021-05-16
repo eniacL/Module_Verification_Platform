@@ -330,11 +330,10 @@ export class UvmSeqDef implements vscode.HoverProvider {
 				markdownString.appendCodeblock(`	The example below shows using the \`uvm_declare_p_sequencer macro along with the uvm_object_utils macros to set up the sequence but not register the sequence in the sequencer's library.`, 'markdown');
 
 
-				markdownString.appendCodeblock(`	Declares the infrastructure needed to define extensions to the <uvm_sequence_library> class. You define new sequence library subtypes to statically specify sequence membership from within sequence definitions. See also <\`uvm_add_to_sequence_library> for more information.`, 'markdown');
+				markdownString.appendCodeblock(`	Declares the infrastructure needed to define extensions to the <uvm_sequence_library> class. You define new sequence library subtypes to statically specify sequence membership from within sequence definitions. See also <\`uvm_add_to_sequence_library> for more information.\n`, 'markdown');
 
-				markdownString.appendCodeblock(`\n————————————————————————————————————————————————————————————\nclass mysequence extends uvm_sequence#(mydata);\n  \`uvm_object_utils(mysequence)\n  \`uvm_declare_p_sequencer(some_seqr_type)\n  task body;\n    //Access some variable in the user's custom sequencer\n    if(p_sequencer.some_variable) begin\n      ...\n    end\n  endtask\nendclass\n————————————————————————————————————————————————————————————\n`, 'systemverilog');
+				markdownString.appendCodeblock(`————————————————————————————————————————————————————————————\nclass mysequence extends uvm_sequence#(mydata);\n  \`uvm_object_utils(mysequence)\n  \`uvm_declare_p_sequencer(some_seqr_type)\n  task body;\n    //Access some variable in the user's custom sequencer\n    if(p_sequencer.some_variable) begin\n      ...\n    end\n  endtask\nendclass\n————————————————————————————————————————————————————————————\n`, 'systemverilog');
 
-				// markdownString.appendCodeblock(`	Each library, itself a sequence, can then be started independently on different sequencers or in different phases of the same sequencer.See <uvm_sequencer_base::start_phase_sequence> for information on starting default sequences.`, 'markdown');
 
 				return {
 					contents: [markdownString]
