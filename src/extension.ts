@@ -6,6 +6,9 @@ import { SyntaxTreeNodeProvider } from "./SyntaxTreeNodeProvider";
 
 import { HdboTrans } from "./Hover/HdboTrans"
 import { UvmSeqDef } from "./Hover/uvm1.2/UvmSeqDef/UvmSeqDef"
+import { UvmRegDef } from "./Hover/uvm1.2/UvmRegDef/UvmRegDef"
+import { UvmMsgDef } from "./Hover/uvm1.2/UvmMsgDef/UvmMsgDef"
+
 
 'use strict';
 // this method is called when your extension is activated
@@ -128,6 +131,24 @@ export function activate(context: vscode.ExtensionContext) {
 			{ language: 'systemverilog', scheme: '*' }
 		  ],
 		  new UvmSeqDef()
+		)
+	  );
+
+	  context.subscriptions.push(
+		vscode.languages.registerHoverProvider(
+		  [
+			{ language: 'systemverilog', scheme: '*' }
+		  ],
+		  new UvmRegDef()
+		)
+	  );
+
+	  context.subscriptions.push(
+		vscode.languages.registerHoverProvider(
+		  [
+			{ language: 'systemverilog', scheme: '*' }
+		  ],
+		  new UvmMsgDef()
 		)
 	  );
 
