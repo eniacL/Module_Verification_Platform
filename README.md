@@ -9,6 +9,8 @@
 
 - ### 更多Feature持续开发中👌
 
+- ### 0.5.5：uvm_reg&uvm_message相关macros悬停提示[2021-5-23]
+
 - ### 0.5.4：uvm_seq相关macros悬停提示[2021-5-16]
 
 - ### 0.5.3：进制自动转换功能  -> 修复二进制不能正常转换的问题  [2021-5-9]
@@ -38,6 +40,12 @@
 ### UVM_seq相关macros悬停提示
 
 ![uvm_seq_macros](md_src/hover/uvm_seq_macros.gif)
+
+### UVM_reg&UVM_message相关macros悬停提示
+
+![uvm_reg_macros](md_src/hover/uvm_reg_macros.gif)
+
+![uvm_message_macros](md_src/hover/uvm_message_macros.gif)
 
 ## Repositories
 
