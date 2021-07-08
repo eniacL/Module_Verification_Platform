@@ -1,6 +1,7 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import * as path from 'path';
 import { DeclarationNode } from "./Nodes/DeclarationNode";
 import { SyntaxTreeNodeProvider } from "./SyntaxTreeNodeProvider";
 
@@ -8,6 +9,8 @@ import { HdboTrans } from "./Hover/HdboTrans"
 import { UvmSeqDef } from "./Hover/uvm1.2/UvmSeqDef/UvmSeqDef"
 import { UvmRegDef } from "./Hover/uvm1.2/UvmRegDef/UvmRegDef"
 import { UvmMsgDef } from "./Hover/uvm1.2/UvmMsgDef/UvmMsgDef"
+
+import news from "./Webview/UVMclassmap/uvmMap"
 
 
 'use strict';
@@ -151,6 +154,16 @@ export function activate(context: vscode.ExtensionContext) {
 		  new UvmMsgDef()
 		)
 	  );
+
+	//	*******************************************************************************************************************  //
+	//	*************************************************** webview part **************************************************	 //
+	//	*******************************************************************************************************************  //	  
+
+	const uvmMap = vscode.commands.registerCommand('mvp.mv.uvmclassmap', () => {
+		news(context, 'WebViewUvmClassMap', 'UVM类库地图');
+	});
+
+	context.subscriptions.push(uvmMap);
 
 }
 
