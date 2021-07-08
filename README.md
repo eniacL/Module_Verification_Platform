@@ -9,6 +9,8 @@
 
 - ### 更多Feature持续开发中👌
 
+- ### 0.5.6：增加UVM类库地图的Webview[2021-7-8]
+
 - ### 0.5.5：uvm_reg&uvm_message相关macros悬停提示[2021-5-23]
 
 - ### 0.5.4：uvm_seq相关macros悬停提示[2021-5-16]
@@ -46,6 +48,12 @@
 ![uvm_reg_macros](md_src/hover/uvm_reg_macros.gif)
 
 ![uvm_message_macros](md_src/hover/uvm_message_macros.gif)
+
+### 呼出UVM类库地图
+
+Ctrl+Shift+P  >> 再输入MVP WebView（如果后续增加了其他WebView功能才会单独设置呼出指令如UVM MAP等）
+
+![k3w1geA9Sg](md_src/webview/k3w1geA9Sg.gif)
 
 ## Repositories
 
