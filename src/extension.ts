@@ -12,7 +12,6 @@ import { UvmMsgDef } from "./Hover/uvm1.2/UvmMsgDef/UvmMsgDef"
 
 import news from "./Webview/UVMclassmap/uvmMap"
 
-
 'use strict';
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
